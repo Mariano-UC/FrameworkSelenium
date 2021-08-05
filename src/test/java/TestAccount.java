@@ -23,8 +23,8 @@ public class TestAccount {
         driver.findElement(By.linkText("Login")).click();
 
         //Lenar Formulario
-        driver.findElement(By.name("email")).sendKeys("mariano12castro@hotmail.com");
-        driver.findElement(By.name("password")).sendKeys("Password123");
+        driver.findElement(By.name("email")).sendKeys(username);
+        driver.findElement(By.name("password")).sendKeys(password);
         driver.findElement(By.cssSelector("[value='Login']")).click();
 
         WebElement logOutButton = driver.findElement(By.linkText("Logout"));
